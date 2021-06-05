@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator</title>
+
+        <link rel="stylesheet" href="assets/style/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="kalkulator">
+            <div class="container">
+                <div class="display">
+                    <div id="displayNumber">0</div>
+                </div>
+                <div class="row">
+                    <div class="button"><p>7</p></div>
+                    <div class="button"><p>8</p></div>
+                    <div class="button"><p>9</p></div>
+                    <div class="button negative"><p>+/-</p></div>
+                </div>
+                <div class="row">
+                    <div class="button"><p>4</p></div>
+                    <div class="button"><p>5</p></div>
+                    <div class="button"><p>6</p></div>
+                    <div class="button operator"><p>-</p></div>
+                </div>
+                <div class="row">
+                    <div class="button"><p>1</p></div>
+                    <div class="button"><p>2</p></div>
+                    <div class="button"><p>3</p></div>
+                    <div class="button operator"><p>+</p></div>
+                </div>
+                <div class="row">
+                    <div class="button clear"><p>CE</p></div>
+                    <div class="button"><p>0</p></div>
+                    <div class="button equals"><p>=</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history">
+            <img src="assets/img/clock.svg" />
+        </div>
+
+        <div class="overlay hide">
+            <div class="container">
+                <header>
+                    <h1>Histori Perhitungan</h1>
+                    <img src="assets/img/x.svg" id="close" title="Tutup Overlay" />
+                    <img src="assets/img/trash.svg" id="delete" title="Hapus Semua Data">
+                </header>
+                <div class="data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Angka Pertama</th>
+                                <th>Operator</th>
+                                <th>Angka Kedua</th>
+                                <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/storage.js"></script>
+        <script src="assets/js/kalkulator.js"></script>
+    </body>
+</html>
