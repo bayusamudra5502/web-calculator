@@ -65,8 +65,8 @@ function updateData() {
             hasil.innerText = String(row.result);
 
             tr.appendChild(angka1);
-            tr.appendChild(angka2);
             tr.appendChild(operator);
+            tr.appendChild(angka2);
             tr.appendChild(hasil);
             tbody.appendChild(tr);
         }
